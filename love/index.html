@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/RS (40).JPG">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Love Calculator</title>
+    <script>
+        love = () => {
+            const l = Math.floor(Math.random() * 100 ) + 1;
+            document.getElementById("lov").innerHTML = l + "%";
+        }
+    </script>
+</head>
+<body style="background-image: url(images/taddy.JPG);">
+    <div class="card" style="border: 2px solid rgb(5, 244, 252);">
+        <div class="card-header">Love Calculator</div>
+        <div class="card-body">
+            <form action="" class="inp">
+                <input type="text" placeholder="Guy Name" id="">
+                <input type="text" placeholder="Bae Name" id="">
+            </form>
+            <div class="box">
+                <p id="lov">Love Percentage</p>
+            </div>
+            <br>
+            <button onclick="love()">Click</button>
+        </div>
+        <div class="card-footer">God Bless Your Relationship</div>
+      </div>
+</body>
+</html>
